@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # количество дней которые будут хранится копии
-daystostore=21
+daystore=21
 # директория хранения бекапов
 backupdir=/backup/sites
 # Массив директорий, которые необходимо бекапить
@@ -29,4 +29,4 @@ chmod -R 0770 $currentbackupdir
 chown -R root:"admin" $currentbackupdir
 
 # Удаление старых архивов / Директория старше значения $daystore будет удалена
-find $backupdir -type d -mtime +$daystostore -delete
+find $backupdir -type d -mtime +$daystore -delete
