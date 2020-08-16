@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 databases=`mysql -e "SHOW DATABASES;" | tr -d "| " | grep -v Database`
 
